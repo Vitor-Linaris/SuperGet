@@ -1,0 +1,24 @@
+a {
+  @include typeface-2(p3, desktop);
+  text-decoration: none;
+  color: $neutral-colors-200;
+  font-weight: 400;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: $primary-color-default;
+  }
+}
+
+.btn {
+  background-color: $neutral-colors-100;
+  color: $neutral-colors-white;
+  border-radius: 120px;
+  padding: 12px 32px;
+  transition: 0.4s ease;
+
+  &:hover {
+    background-color: $primary-color-default;
+    color: $neutral-colors-white;
+  }
+}

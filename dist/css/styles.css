@@ -1,0 +1,294 @@
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/scss/styles.scss ***!
+  \**********************************************************************************************************************/
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/OpenSans-Regular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/OpenSans-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/OpenSans-Bold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 72px;
+  line-height: 100%;
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 56px;
+    line-height: 100%;
+  }
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 56px;
+  line-height: 100%;
+}
+@media screen and (max-width: 960px) {
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    line-height: 100%;
+  }
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  line-height: 100%;
+}
+@media screen and (max-width: 960px) {
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: 100%;
+  }
+}
+
+p {
+  color: #495057;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+}
+@media screen and (max-width: 960px) {
+  p {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #495057;
+  font-weight: 400;
+  transition: 0.4s ease;
+}
+a:hover {
+  color: #f22824;
+}
+
+.btn {
+  background-color: #343a40;
+  color: #ffffff;
+  border-radius: 120px;
+  padding: 12px 32px;
+  transition: 0.4s ease;
+}
+.btn:hover {
+  background-color: #f22824;
+  color: #ffffff;
+}
+
+/* @import "partials/spacing"; */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  background-color: #f22824;
+  font-family: "Open Sans", sans-serif;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: none;
+  position: fixed;
+  z-index: 99;
+}
+
+.navbar-desktop {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-desktop .menu-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.navbar-desktop-item-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-desktop-item-3 .btn {
+  margin-right: 32px;
+}
+.navbar-desktop-item-3 .icon-login {
+  margin-right: 16px;
+}
+
+.navbar-mobile {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.7s ease;
+}
+.bx::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+.bx::before {
+  content: "";
+  position: absolute;
+  top: 64%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+
+.active-bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.7s ease;
+}
+.active-bx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-135deg);
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+.active-bx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-45deg);
+  width: 70%;
+  height: 2px;
+  background-color: red;
+}
+
+.menu-mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-mobile .nav-list-mobile {
+  list-style: none;
+}
+
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-link-mobile {
+  max-width: 1246px;
+  list-style: none;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link-mobile {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+/* @import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations"; */
